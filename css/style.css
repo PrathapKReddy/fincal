@@ -1,0 +1,504 @@
+
+body {
+	background-color: #edf0f5;
+	font-family: sans-serif;
+	margin-top: 55px;
+}
+/* Css for Header Navigation Start */
+#lapPages {
+	float: right;
+	margin-top: 10px;
+}
+
+#lapPages a {
+	color: white;
+}
+
+#lapPages a:hover {
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+#siteTitle a {
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+    font-weight: 600
+    
+}
+
+#menuIcon {
+	font-size: 30px;
+	padding-left: 10px;
+	display: none;
+}
+
+.lapMenuPage {
+	font-size: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	opacity: 0.95;
+}
+
+
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+	transition: 0.05s;
+
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #111;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#mobileHeader {
+	background-color: #4267B2;
+	color: white;
+	cursor: pointer;
+	padding: 5;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	padding-right: 150px;
+	padding-left: 150px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	height: 55px;
+}
+
+@media only screen and (max-width: 767px) {
+	#menuIcon {
+		display: inline;
+		float: left;
+	}
+
+	.sidenav {
+		padding-top: 50px;
+	}
+
+	.sidenav a {
+		font-size: 18px;
+	}
+
+	#lapPages {
+		display: none;
+	}
+
+	#siteTitle {
+		display: inline-block;
+	}
+
+	#mobileHeader {
+		padding-right: 0px;
+		padding-left: 0px;
+		text-align: center;
+	}
+}
+/* Css for Header Navigation End */
+/* Css for Footer Navigation Start */
+#footer {
+	min-height: 50px;
+	background-color: #494949;
+	color: #d2d1d1;
+	text-align: center;
+	padding: 10px;
+
+}
+/* Css for Footer Navigation End */
+/* DIV Calc CSS Start*/
+#homeContainer,#calandSideContainer,.fincalContainer {
+	width: 80%;
+	min-height:89%;
+	margin-bottom: 20px;
+}
+
+#homeContainer {
+	padding-top: 10px;
+}
+
+#calName {
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+    margin-top: 10px;
+}
+
+.inputBox {
+	font-size: 20px;
+}
+
+.inputBox input {
+	width: 100%;
+}
+
+label {
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+#buttonContainer {
+	margin: 0px;
+}
+
+#calculateButton, #resetButton {
+	width: 100%;
+	font-size: 20px;
+	margin: 15px 0;
+	background-color: #337ab7;
+	color: white;
+}
+
+#resetButton {
+	display: none;
+}
+
+.resultTitle {
+	font-size: 20px;
+}
+
+#pieChart {
+	max-width: 250px;
+	margin: auto;
+}
+
+#barChart {
+	height: 300px;
+}
+
+#outputContainer {
+	visibility: collapse;
+}
+
+.barcontainer {
+	margin: 15px 5px;
+	padding-top: 20px;
+}
+
+#targetContainer,#goalLsContainer,#goalsipContainer {
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+.outputCards1 {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	background-color: white;
+	border-radius: 5px;
+	width: 49%;
+	margin: 0.5%;
+	padding: 15px;
+}
+
+.outputCards2 {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	background-color: white;
+	border-radius: 5px;
+	width: 98%;
+	margin: 1%;
+	padding: 15px;
+}
+
+.cardHeading {
+	font-size: 20px;
+	border-left: 5px solid;
+	border-color: #4267B2;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.outputCards1 table, .outputCards2 table {
+	font-size: 18px;
+	width: 100%;
+}
+
+.outputCards1 table tr td, .outputCards2 table tr td {
+	padding-top: 8px;
+	margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+	#homeContainer,#calandSideContainer,.fincalContainer {
+		width: 100%;
+	}
+
+	#resultContainer {
+		border: none;
+	}
+
+	.outputCards1, .outputCards2 {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		background-color: white;
+		border-radius: 5px;
+		width: 100%;
+		margin: 1% 0;
+		padding: 15px;
+	}
+    
+}
+/* DIV Calc CSS End*/
+/* Right Side Bar */
+#rightSideBar {
+	margin-top: 10px;
+	position: fixed;
+	top: 80px;
+	right: 10%;
+	width: 25%;
+}
+
+.item,#rightSideBarHeading {
+	display: block;
+	margin: 2px;
+	padding: 5px;
+	font-size: 18px;
+	text-decoration: none;
+	color: black;
+	background-color: white;
+}
+
+.item:hover {
+	text-decoration: none;
+	color: black;
+	opacity: 0.7;
+}
+
+#rightSideBarHeading {
+	background-color: #4267B2;
+	color: white;
+}
+
+@media only screen and (max-width: 767px) {
+	#rightSideBar {
+		display: none;
+	}
+}
+/* CSS for Home Page*/
+.homeButton {
+	width: 100%;
+}
+/* CSS for Loan Calculators */
+#showTableButton {
+	display: none;
+}
+
+#showTableButton,#hideTableButton {
+	width: 100%;
+	font-size: 20px;
+	margin: 15px 0px;
+	color: white;
+	align-self: center;
+}
+
+#showTableButton {
+	background-color: #4CAF50;
+}
+
+#hideTableButton {
+	background-color: #ff4040;
+}
+
+#myTable {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#myTable td, #myTable th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+
+#myTable tr:nth-child(odd) {
+	background-color: white;
+}
+
+#myTable tr:hover {
+	background-color: #ddd;
+}
+
+#myTable th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+/* CSS for Loader */
+#loader {
+	border: 5px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 5px solid #3498db;
+	width: 30px;
+	height: 30px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	margin: auto;
+	display: none;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* scroll UP*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  z-index: 9;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: #4267B2;
+  cursor: pointer;
+  margin: 0;
+   height: 30px;
+width: 30px;
+    vertical-align: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 1
+}
+
+#myBtn:hover {
+  opacity: 0.8;
+}
+
+
+/*  Contact form CSS  */
+#contactForm input{
+    width: 100%;
+    font-size: 20px;
+    
+}
+#contactForm label{
+    font-size: 20px;
+}
+#contactForm textarea{
+    width: 100%;font-size: 22px;
+}
+#contactSubmit{
+    width: 100%;
+	font-size: 20px;
+	margin:0;
+	background-color: #337ab7;
+	color: white;
+}
+
+/*Sticky footer CSS*/
+ .mobile-bottom-nav{
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:10;
+	
+	will-change:transform;
+	transform: translateZ(0);
+	
+	display:flex;	
+	
+	height:50px;
+	
+	box-shadow: 0 -2px 5px -2px #333;
+	background-color:#fff;
+}
+.mobile-bottom-nav__item{
+		flex-grow:1;
+		text-align:center;
+		font-size:12px;
+		
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+}
+.mobile-bottom-nav__item--active{
+		
+		color:#4267B2;
+	}
+.mobile-bottom-nav__item-content{ 
+		display:flex;
+		flex-direction:column;		
+	}
+.mobile-bottom-nav__item-content a{color:#000}
+
+.mobile-bottom-nav{display: none}
+@media only screen and (max-width: 767px){.mobile-bottom-nav{display: flex}}
+
+/*   */
+.fincalHeading{
+    background-color: #337ab7;
+    font-size: 26px;
+    color: white;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+    text-align: center;
+}
+.fincalItem{
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid;
+    border-color: #d2d2d2;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+.fincalimg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+.fincalItem a{
+    color: black;
+    text-decoration: none;
+}
+
+

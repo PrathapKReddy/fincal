@@ -1,0 +1,139 @@
+<!doctype html5>
+<html lang="en">
+
+<head>
+    <script data-ad-client="ca-pub-8072255894345994" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QK88RTTSG8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QK88RTTSG8');
+    </script>
+
+    
+    
+    
+    
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Loan</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" /> 
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5fea9aac3348b8001a9b4c8b&product=inline-share-buttons' async='async'></script>
+    </head>
+
+<body>
+	<div w3-include-html="../components/header.html"></div>
+	<div class="container-fluid" id="calandSideContainer">
+		<div class="row">
+			<div class="col-sm-8" id="calContainer">
+				<div class="row" id="calName">
+					<div class="col-sm-12">Home Loan EMI Calculator</div>
+				</div>
+				<div class="row" id="inputContainer">
+					<div class="col-sm-12">
+						<div class="inputBox">
+							<label>Loan Amount:</label>
+							<br>
+							<input type="number" id="input1" value="1000000"> </div>
+						<div class="inputBox">
+							<label>Tenure: (in Months)</label>
+							<br>
+							<input type="number" id="input2" value="120"> </div>
+						<div class="inputBox">
+							<label>Rate of Interest: (per annum)</label>
+							<br>
+							<input type="number" id="input3" value="9"> </div>
+					</div>
+				</div>
+				<div class="row" id="buttonContainer">
+					<div class="col-sm-12 btn" id="calculateButton" onclick="personalloan()">Calculate</div>
+					<div class="col-sm-12 btn" id="resetButton" onclick="personalloan()">Reset</div>
+				</div>
+				<div id="loader"></div>
+				<div class="container-fluid" id="outputContainer">
+					<div class="row">
+						<div class="col-sm-6" id="resultContainer">
+                        <div class="row">
+                           <div class="col-sm-12 outputCards2">
+                              <div class="cardHeading">Input</div>
+                              <table>
+                                 <tr>
+                                    <td>Loan Amount :</td>
+                                    <td id="showip1"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Tenure :</td>
+                                    <td id="showip2"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Interest :</td>
+                                    <td id="showip3"></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-12 outputCards2">
+                              
+                               <div class="cardHeading">Result</div>
+                               <table>
+                                 <tr>
+                                    <td>EMI Amount:</td>
+                                    <td id="EMIresult"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Interest :</td>
+                                    <td id="interestResult"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Total :</td>
+                                    <td id="totalResult"></td>
+                                 </tr>
+                              </table>
+                               
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 outputCards1">
+                        <div class="cardHeading">Break up of Total Amount</div>
+                        <div class="chartcontainer">
+                           <canvas id="pieChart"></canvas>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="barcontainer outputCards2">
+                        <div class="cardHeading">Bar Chart</div>
+                        <div>
+                           <canvas id="barChart"></canvas>
+                        </div>
+                     </div>
+                  </div>
+                    <div class="row">
+                        
+                        <button type="button" class="btn" id="showTableButton" onclick="showTable()"><span class="glyphicon glyphicon-plus-sign"></span> Show EMI Table</button>
+                        <button type="button" class="btn" id="hideTableButton" onclick="hideTable()"><span class="glyphicon glyphicon-minus-sign"></span> Hide EMI Table </button>
+                    </div>
+                    <div class="row">
+                        <div id="tableContainer"></div>
+                    </div>
+                        
+                    </div>
+               </div>
+            </div>
+            <div class="col-sm-4" id="rightSideBar">
+               <div w3-include-html="../components/rightSideBar.html"></div>
+            </div>
+         </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon">&#xe113;</span></button>
+
+      <div w3-include-html="../components/footer.html"></div>
+	<script src="../scripts/universal.js"></script>
+      <script src="../scripts/functions.js"></script>
+   </body>
