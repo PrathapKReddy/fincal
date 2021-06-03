@@ -154,3 +154,19 @@ function retireCal() {
     document.getElementById('corpusReq').innerHTML=numberWithCommas(Math.round(adjMe*12/0.05));
 }
 
+//Code for PWA
+window.addEventListener('load', () => {
+  registerSW();
+});
+
+async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator.serviceWorker.register('../sw.js');
+    } catch (e) {
+      console.log(`SW registration failed`);
+    }
+  }
+}
+
+

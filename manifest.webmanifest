@@ -1,0 +1,16 @@
+{
+  "name": "Financial Calculator",
+  "short_name": "FinCal",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A Financial Calculator App.",
+  "icons": [
+    {
+      "src": "assets/favicon/icon.png",
+      "sizes": "1250x1250",
+      "type": "image/png"
+    }
+    
+  ]
+}
