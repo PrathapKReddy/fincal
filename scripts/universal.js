@@ -54,10 +54,12 @@ function includeHTML() {
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+   document.body.style.overflow="hidden";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+   document.body.style.overflow="visible";
 }
 
 

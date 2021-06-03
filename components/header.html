@@ -1,71 +1,40 @@
 <style>
-.dropbtn {
-  border: none;
-  cursor: pointer;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  overflow: auto;
-  z-index: 1;
-}
-.dropdown-content a {
-
-    padding-left: 50px;
-  text-decoration: none;
-  display: block;
-}
-.show {display: block;}
-
+   .dropbtn {
+   border: none;
+   cursor: pointer;
+   }
+   .dropdown {
+   position: relative;
+   display: inline-block;
+   }
+   .dropdown-content {
+   display: none;
+   position: absolute;
+   overflow: auto;
+   z-index: 1;
+   }
+   .dropdown-content a {
+   padding-left: 50px;
+   text-decoration: none;
+   display: block;
+   }
+   .show {display: block;}
 </style>
-<script>
 
-</script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="container-fluid" id="mobileHeader">
-    <span id="menuIcon" onclick="openNav()">&#9776; </span><span id="siteTitle"><a href="../pages/home.html">Financial Calculators</a></span>
-    <span id="lapPages">
-        
-        <a class="lapMenuPage" href="../pages/home.html">Home</a>
-        <a class="lapMenuPage" href="../pages/contact.html">Contact</a>
-        
-    </span>
-    
+   <span id="menuIcon" onclick="openNav()">&#9776; </span><span id="siteTitle"><a href="../pages/home.html">Financial Calculators</a></span>
+   <span id="lapPages">
+   <a class="lapMenuPage" href="../pages/home.html">Home</a>
+   <a class="lapMenuPage" href="../pages/contact.html">Contact</a>
+   </span>
 </div>
-
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="../pages/simpleInterest.html">Simple Interest</a>
-  <a href="../pages/compoundinterest.html">Compound Interest</a>
-  <a href="../pages/fixeddeposit.html">Fixed Deposit</a>
-  <a href="../pages/recurringdeposit.html">Recurring Deposit</a>
-  <a href="../pages/Lumpsum.html">LumpSum</a>
-  <a href="../pages/sip.html">SIP</a>
-  <a href="../pages/goal.html">Goal</a>
-  <a href="../pages/retirement.html">Retirement</a>
-  <a href="../pages/homeloan.html">Home Loan Calculator</a>
-  <a href="../pages/personalloan.html">Personal Loan Calculator</a>
-
-
-
-<div class="dropdown">
-    <a href="#"><div onclick="myFunction()" class="dropbtn">Others &#9660;</div></a>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="../pages/contact.html">Contact</a>
-  </div>
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="../pages/home.html"><i class="fa fa-home" style="font-size:24px;"></i>&nbsp;&nbsp;&nbsp;Home</a>
+   <a href="../pages/contact.html"><i class="fa fa-envelope" style="font-size:20px;"></i>&nbsp;&nbsp;&nbsp;Contact</a>
+   <a href="../pages/share.html"><i class="fa fa-share-alt" style="font-size:20px;"></i>&nbsp;&nbsp;&nbsp;Share</a>
+   <a href="../pages/rateus.html"><i class="fa fa-star" style="font-size:20px;"></i>&nbsp;&nbsp;&nbsp;Rate Us</a>
 </div>
-
-</div>
-
-
-
-
-
-
-
