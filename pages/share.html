@@ -3,30 +3,36 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-	   <meta name="description" content="Free Web tutorials">
+      <meta name="description" content="Free Web tutorials">
       <title>Share</title>
+      
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
       <link rel="stylesheet" type="text/css" href="../css/style.css" />
-	   
-	   <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5fea9aac3348b8001a9b4c8b&product=inline-share-buttons' async='async'></script>
-	   
-	   
+      
+      <meta property="og:title" content="Share | Financial Calculators" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://fincal.in/pages/share.html" />
+      <meta property="og:description" content="This is an awesome website that i found online, hope you will love it too"/>
+      
+      <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5fea9aac3348b8001a9b4c8b&product=inline-share-buttons' async='async'></script>
    </head>
    <body>
       <div w3-include-html="../components/header.html"></div>
       <div class="container-fluid" id="calandSideContainer">
          <div class="row">
             <div class="col-sm-8" id="calContainer">
-                <div class="row" id="calName">
-					<div class="col-sm-12">Share</div>
-				</div>
-               
-                <div class="row outputCards2">
-                    <div class="col-sm-12" style="font-size: 18px">I am the Share Page</div>
-                </div>
-                
-             <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+               <div class="row" id="calName">
+                  <div class="col-sm-12">Share</div>
+               </div>
+               <div class="row outputCards2">
+                  
+                  <div class="col-sm-12" style="font-size: 18px;text-align: center">We are elated to see you here.<br><br>Choose one of the following channel to spread the love.</div><br><br>
+                  
+                  <!-- ShareThis BEGIN -->
+                  <div class="sharethis-inline-share-buttons"></div><br>
+                  <!-- ShareThis END -->
+               </div>
             </div>
             <div class="col-sm-4" id="rightSideBar">
                <div w3-include-html="../components/rightSideBar.html"></div>
@@ -35,6 +41,5 @@
       </div>
       <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon">&#xe113;</span></button>
       <div w3-include-html="../components/footer.html"></div>
-	<script src="../scripts/universal.js"></script>
-    
+      <script src="../scripts/universal.js"></script>
    </body>
