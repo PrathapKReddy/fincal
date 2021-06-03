@@ -158,7 +158,7 @@ function shareMe(){
     if (navigator.share) {
     navigator.share({
       title: 'fincal.in',
-      text: 'Check out fincal.in.',
+      text: 'Check out this amazing financial calculator that caters all your financial savvy needs.',
       url: 'https://fincal.in/',
     })
       .then(() => console.log('Successful share'))
