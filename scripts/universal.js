@@ -157,9 +157,9 @@ function retireCal() {
 function shareMe(){
     if (navigator.share) {
     navigator.share({
-      title: 'web.dev',
-      text: 'Check out web.dev.',
-      url: 'https://web.dev/',
+      title: 'fincal.in',
+      text: 'Check out fincal.in.',
+      url: 'https://fincal.in/',
     })
       .then(() => console.log('Successful share'))
       .catch((error) => console.log('Error sharing', error));
