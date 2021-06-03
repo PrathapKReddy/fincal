@@ -154,14 +154,3 @@ function retireCal() {
     document.getElementById('corpusReq').innerHTML=numberWithCommas(Math.round(adjMe*12/0.05));
 }
 
-function shareMe(){
-    if (navigator.share) {
-    navigator.share({
-      title: 'fincal.in',
-      text: 'Check out this amazing financial calculator that caters all your financial savvy needs.',
-      url: 'https://fincal.in/',
-    })
-      .then(() => console.log('Successful share'))
-      .catch((error) => console.log('Error sharing', error));
-  }
-}
