@@ -152,7 +152,16 @@ function retireCal() {
     document.getElementById('showip3').innerHTML=inflation+"%";
     document.getElementById('resultInfAdj').innerHTML=numberWithCommas(Math.round(adjMe));
     document.getElementById('corpusReq').innerHTML=numberWithCommas(Math.round(adjMe*12/0.05));
-    
-    
+}
 
+function shareMe(){
+    if (navigator.share) {
+    navigator.share({
+      title: 'web.dev',
+      text: 'Check out web.dev.',
+      url: 'https://web.dev/',
+    })
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error));
+  }
 }
