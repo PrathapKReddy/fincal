@@ -16,6 +16,8 @@
       <title>Fincal</title>
       
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      
       <link rel="stylesheet" type="text/css" href="../css/style.css" />
       
       <link rel="manifest" href="../manifest.webmanifest"/>
@@ -24,6 +26,22 @@
    <body>
       <div w3-include-html="../components/header.html"></div>
       <div class="container-fluid" id="homeContainer">
+         
+      <!-- Slide Show starts-->
+         <div class="w3-content w3-display-container slideShowContainer">
+           <img class="mySlides" src="../assets/img1.png" style="width:100%">
+           <img class="mySlides" src="../assets/img2.png" style="width:100%">
+           <img class="mySlides" src="../assets/img3.png" style="width:100%">
+           <img class="mySlides" src="../assets/img2.png" style="width:100%">
+
+           <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+           <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+         </div><br>
+         
+         <!-- Slide Show ends-->
+         
+         
+         
          <div class="col-sm-3 outputCards1 homeColor1">
             <div class="cardHeading">Interest Calculators</div>
             <div><a href="../pages/simpleInterest.html">Simple Interest Calculator</a></div>
