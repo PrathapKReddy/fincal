@@ -6,10 +6,12 @@
   "background_color": "#4267b2",
   "description": "A Financial Calculator App.",
   "icons": [
+
       {
-          "src": "https://fincal.in/assets/favicon/icon.png",
-          "sizes": "1250x1250",
-          "type": "image/png"
+        "src": "assets/favicon/icon.png",
+        "sizes": "196x196",
+        "type": "image/png",
+        "purpose": "maskable"
       }
   ],
   "url": "https://fincal.in",
