@@ -1,16 +1,19 @@
 {
   "name": "Financial Calculator",
   "short_name": "FinCal",
-  "start_url": ".",
+  "start_url": "https://fincal.in",
   "display": "standalone",
-  "background_color": "#fff",
+  "background_color": "#4267b2",
   "description": "A Financial Calculator App.",
   "icons": [
-    {
-      "src": "assets/favicon/icon.png",
-      "sizes": "1250x1250",
-      "type": "image/png"
-    }
-    
-  ]
+      {
+          "src": "https://fincal.in/assets/favicon/icon.png",
+          "sizes": "1250x1250",
+          "type": "image/png"
+      }
+  ],
+  "url": "https://fincal.in",
+  "manifestUrl": "https://fincal.in/manifest.webmanifest",
+  "lang": "en",
+  "orientation": "portrait"
 }
