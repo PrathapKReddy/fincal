@@ -15,5 +15,7 @@
   "url": "https://fincal.in",
   "manifestUrl": "https://fincal.in/manifest.webmanifest",
   "lang": "en",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "categories": ["calculator", "education", "financial"],
+  "scope": "https://example.com/"
 }
