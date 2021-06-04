@@ -173,8 +173,8 @@ async function registerSW() {
 function shareMe(){
    if (navigator.share) {
      navigator.share({
-       title: 'web.dev',
-       text: 'Check out web.dev.',
+       title: 'fincal.in',
+       text: 'This is an awesome website that i found online, hope you will love it too',
        url: 'https://web.dev/',
      })
        .then(() => console.log('Successful share'))
