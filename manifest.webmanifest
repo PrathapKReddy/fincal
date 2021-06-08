@@ -41,7 +41,7 @@
   "url": "https://fincal.in",
   "manifestUrl": "https://fincal.in/manifest.webmanifest",
   "lang": "en",
-  "theme_color": "#4267b2",
+  "theme_color": "#4267f2",
   "orientation": "portrait",
   "categories": ["calculator", "education", "financial"],
   "scope": "https://example.com/"
