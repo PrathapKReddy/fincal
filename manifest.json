@@ -3,9 +3,16 @@
   "name": "Financial Calculator",
   "short_name": "FinCal",
   "start_url": "/index.html",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#000000",
   "description": "A Financial Calculator App.",
+  "url": "/index.html",
+  "manifestUrl": "/manifest.json",
+  "lang": "en",
+  "theme_color": "#4267b2",
+  "orientation": "portrait-primary",
+  "categories": ["calculator", "education", "financial"],
+  "scope": "/",
   "icons": [
     {
       "src": "assets/favicon/icon-64_x_64.png",
@@ -38,12 +45,5 @@
       "type": "image/png",
       "purpose": "maskable"
     }   
-  ],
-  "url": "/index.html",
-  "manifestUrl": "/manifest.json",
-  "lang": "en",
-  "theme_color": "#000000",
-  "orientation": "portrait-primary",
-  "categories": ["calculator", "education", "financial"],
-  "scope": "/"
+  ]
 }
