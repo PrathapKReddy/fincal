@@ -3,7 +3,7 @@
   "name": "Financial Calculator",
   "short_name": "FinCal",
   "start_url": "/index.html",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#4267b2",
   "description": "A Financial Calculator App.",
   "url": "/index.html",
