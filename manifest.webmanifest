@@ -9,7 +9,7 @@
   "url": "/index.html",
   "manifestUrl": "/manifest.webmanifest",
   "lang": "en",
-  "theme_color": "#4267f2",
+  "theme_color": "#4267c2",
   "orientation": "portrait-primary",
   "categories": ["calculator", "education", "financial"],
   "scope": "/",
@@ -35,9 +35,10 @@
       "sizes": "500x500"
     },  
     {
-      "src": "assets/favicon/icon-512_x_512.png",
+      "src": "assets/favicon/icon-512_x_512-all.png",
       "sizes": "512x512",
-      "type": "image/png"      
+      "type": "image/png",
+      "purpose":"any"      
     },  
     {
       "src": "assets/favicon/icon-512_x_512.png",
