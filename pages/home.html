@@ -16,7 +16,6 @@
       <title>Fincal</title>
       
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" type="text/css" href="../css/style.css" />
       
       
@@ -32,6 +31,16 @@
          
       <!-- Slide Show starts-->
       
+      
+      <div class="w3-content w3-display-container">
+         <img class="mySlides" src="https://fincal.in/assets/img1.png" style="width:100%">
+         <img class="mySlides" src="https://fincal.in/assets/img2.png" style="width:100%">
+         <img class="mySlides" src="https://fincal.in/assets/img1.png" style="width:100%">
+         <img class="mySlides" src="https://fincal.in/assets/img2.png" style="width:100%">
+      
+         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
       
          
       <!-- Slide Show ends-->
@@ -73,6 +82,26 @@
       <script src="../scripts/universal.js"></script>
       <div w3-include-html="../components/footer.html"></div>
    
+      <!-- Script for Java Script -->
+      <script>
+         var slideIndex = 1;
+         showDivs(slideIndex);
+
+         function plusDivs(n) {
+         showDivs(slideIndex += n);
+         }
+
+         function showDivs(n) {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         if (n > x.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = x.length}
+         for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+         }
+         x[slideIndex-1].style.display = "block";  
+         }
+      </script>
       
 
    </body>
