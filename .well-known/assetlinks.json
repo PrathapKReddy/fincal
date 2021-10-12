@@ -1,6 +1,6 @@
 [{
         "relation": ["delegate_permission/common.handle_all_urls"],
         "target" : { "namespace": "android_app", "package_name": "in.fincal.twa",
-                     "sha256_cert_fingerprints": ["65:2B:7B:EB:FC:7D:4A:E3:4B:BD:74:5D:6D:25:D4:A7:19:5E:2A:02:84:2B:10:4D:96:ED:31:43:AA:B7:EF:62"] }
+                     "sha256_cert_fingerprints": ["17:DE:6C:4A:F0:FC:08:59:AA:F0:23:B5:29:90:29:F9:65:DC:9B:FE:E4:9C:B5:7E:B2:BC:A3:60:99:4F:CE:20"] }
       }
 ]
