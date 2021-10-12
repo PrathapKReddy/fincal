@@ -9,7 +9,7 @@
   "url": "/index.html",
   "manifestUrl": "/manifest.webmanifest",
   "lang": "en",
-  "theme_color": "#4267c2",
+  
   "orientation": "portrait-primary",
   "categories": ["calculator", "education", "financial"],
   "scope": "/",
