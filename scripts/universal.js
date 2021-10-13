@@ -175,7 +175,7 @@ function shareMe(){
      navigator.share({
        title: 'fincal.in',
        text: 'This is an awesome website that i found online, hope you will love it too',
-       url: 'https://fincal.in/',
+       url: 'https://bit.ly/FincalAndroidApp',
      })
        .then(() => console.log('Successful share'))
        .catch((error) => console.log('Error sharing', error));
